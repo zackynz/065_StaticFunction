@@ -5,6 +5,10 @@ using namespace std;
 class mahasiswa
 {
 private:
-    static int nimm;
+    static int nim;
+
+public:
+    int id;
+    string nama;
 };
 
