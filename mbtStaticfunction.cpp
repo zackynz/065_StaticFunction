@@ -2,7 +2,7 @@
 #include <string>
 using namespace std;
 
-class mahasiswa
+class Mahasiswa
 {
 private:
     static int nim;
@@ -17,22 +17,36 @@ public:
     static void setNim(int pNim) { nim = pNim; }
     static int getNim() { return nim; }
 
-    mahasiswa (string pnama):nama(pnama)
+    Mahasiswa (string pnama):nama(pnama)
     {
         setID();
     }
 };
 
-int mahasiswa::nim = 100;
+int Mahasiswa::nim = 100;
 
-void mahasiswa::setID()
+void Mahasiswa::setID()
 {
     id = ++nim;
 }
 
-void mahasiswa::printA11()
+void Mahasiswa::printA11()
 {
     cout << "ID  = " << id << endl;
     cout << "Nama = " << nama << endl;
     cout << endl;
+}
+
+int main()
+{
+    Mahasiswa mhs1("Sri Dodi");
+    Mahasiswa mhs2("Budi Jatmiko");
+
+    Mahasiswa::setNim(9); //mengakses nim melalui static member function "setNim"
+    Mahasiswa mhs3("Andi Janu");
+    Mahasiswa mhs4("Joko Wahono");
+
+
+
+
 }
