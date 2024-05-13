@@ -30,4 +30,9 @@ void mahasiswa::setID()
     id = ++nim;
 }
 
-
+void mahasiswa::printA11()
+{
+    cout << "ID  = " << id << endl;
+    cout << "Nama = " << nama << endl;
+    cout << endl;
+}
