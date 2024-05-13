@@ -10,5 +10,8 @@ private:
 public:
     int id;
     string nama;
+
+    void setID();
+    void printA11();
 };
 
