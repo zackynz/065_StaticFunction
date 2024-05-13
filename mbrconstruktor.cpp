@@ -8,5 +8,12 @@ private:
     int nim;
     string nama;
 
+private:
+    Mahasiswa()
+    {
+        nim = 0;
+        nama = "";
+    };
+
 
 };
